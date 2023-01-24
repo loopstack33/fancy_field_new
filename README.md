@@ -1,17 +1,15 @@
-# fancy_state_screens
-[![Github stars](https://img.shields.io/github/stars/loopstack33/fancy_state_screens?logo=github)](https://github.com/loopstack33/fancy_state_screens)
-[![Pub Version](https://img.shields.io/pub/v/fancy_state_screens?color=blue&logo=dart)](https://pub.dev/packages/fancy_state_screens)
+# fancy_field_new
+[![Github stars](https://img.shields.io/github/stars/loopstack33/fancy_field_new?logo=github)](https://github.com/loopstack33/fancy_field_new)
+[![Pub Version](https://img.shields.io/pub/v/fancy_field_new?color=blue&logo=dart)](https://pub.dev/packages/fancy_field_new)
 
-Fancy Buttons is a flutter widget library, include states widgets for which is fully customizable and can be extended on request.
-No more extra hassle for all the extra working around with empty and error states.
-We designed 5 error pages for your app it runs both Android and iOS because it builds with flutter.
-It contains almost all error pages like 404 page not found, No internet connection and custom screen which provide you better user experience.
+Fancy Fields is a flutter widget library, include text field widgets which is fully customizable and can be extended on request.
+No more extra hassle for all the extra working around with text fields.
 
 ## Installation
 1) Add this to your packages pubspec.yaml file:
 ```yaml
 dependencies:
-  fancy_state_screens: <latest version>
+   fancy_field_new: <latest version>
 ```
 2) Install it
    You can install it from the command line:
@@ -21,15 +19,12 @@ $ flutter pub get
 3) Import it
    Now in Dart code, you can use:
 ```dart
-import 'package:fancy_state_screens/fancy_fields_new.dart';
+import 'package:fancy_field_new/fancy_field_new.dart';
 ```
 
 ## Recommendation
 We recommend you to using the latest version.
 
-## Using
-
-### Enabled State.
 
 You need to use just the following code:
 
