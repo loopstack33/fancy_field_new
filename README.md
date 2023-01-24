@@ -24,115 +24,101 @@ import 'package:fancy_field_new/fancy_field_new.dart';
 
 ## Recommendation
 We recommend you to using the latest version.
+Screenshot
 
+<img src="https://user-images.githubusercontent.com/99548269/214272237-bcbdbd31-b138-4a69-8e6f-6d9257cb4c69.png" align="center" style="width: 50%" />
 
 You need to use just the following code:
 
 ### Default Type
 
 ```dart
-FancyState(
- image: "asset_image",
- title: ,
- description: ,
- imageHeight: ,
- imageWidth: ,
- titleSize: ,
- descSize: ,
- titleColor: ,
- descColor: ,
- titleFont: ,
- descFont: ,  
-),
+MyFancyField(
+hasBorder:false,
+fieldColor: white,
+hint: 'Default',
+hasShadow: false,),
 ```
 
-Screenshot
 
-<img src="https://user-images.githubusercontent.com/99548269/205614250-c0af073b-1705-4781-957d-0ab59ef95408.png" align="center" style="width: 50%" />
-
-### Simple Button
+### With Border
 
 ```dart
-MyFancyButton(
-   isIconButton: false,
-   fontSize: 15,
-   text: "Simple Button",
-   tap: (){},
-   buttonColor: purpleLight,
-   hasShadow: false),
+MyFancyField(
+hasBorder:true,
+borderColor: Colors.black.withOpacity(0.25),
+fieldColor: white,
+hint: 'With Border',
+hasShadow: false,),
 ```
 
-### Colored Button
+### With Shadow
 
 ```dart
- MyFancyButton(
-   isIconButton: false,
-   fontSize: 15,
-   text: "Colored Button",
-   tap: (){},
-   fontColor: Colors.white,
-   buttonColor: purpleColor,
-   hasShadow: false),
+MyFancyField(
+hasBorder:false,
+fieldColor: white,
+hint: 'With Shadow',
+shadowColor: Colors.grey,
+blur: 5,
+hasShadow: true),
 ```
 
-### Rounded Button
+### Obscure Field
 
 ```dart
-MyFancyButton(
-   isIconButton: false,
-   fontSize: 15,
-   borderRadius: 10,
-   text: "Rounded Button",
-   tap: (){},
-   fontColor: Colors.white,
-   buttonColor: gmail,
-   hasShadow: false),
+MyFancyField(
+obscuringCharacter: "*",
+obscure: true,
+hasBorder:true,
+fieldColor: white,
+hint: 'With Obscure',
+hasShadow: false),
 ```
 
-### Shadow Button
+### With Prefix Widget
 
 ```dart
-MyFancyButton(
-   isIconButton: false,
-   fontSize: 15,
-   spreadRadius: 0,
-   blurRadius: 4,
-   offset: const Offset(0, 4),
-   shadowColor: Colors.black.withOpacity(0.25),
-   text: "Shadow Button",
-   tap: (){},
-   fontColor: Colors.white,
-   buttonColor: greenColor,
-   hasShadow: true),
+MyFancyField(
+hasBorder:true,
+align: true,
+prefixIcon: const Icon(FeatherIcons.user,color: Colors.grey,),
+fieldColor: white,
+hint: 'With Prefix Icon',
+hasShadow: false),
 ```
 
-### Image Button
+### With Suffix Widget
 
 ```dart
-MyFancyButton(
-   isIconButton: true,
-   image: "assets/icons/select.png",
-   imageHeight: 20,
-   imageWidth: 20,
-   fontSize: 15,
-   text: "Image Button",
-   tap: (){},
-   fontColor: Colors.white,
-   buttonColor: infoColor,
-   hasShadow: false),
+MyFancyField(
+align: true,
+suffixIcon: const Icon(FeatherIcons.mail,color: Colors.grey,),
+hasBorder:true,
+fieldColor: white,
+hint: 'With Suffix Icon',
+hasShadow: false),
 ```
 
-### Outline Button
+### With Font Styling
 
 ```dart
-MyFancyButton(
-   isIconButton: false,
-   borderColor: Colors.white,
-   borderRadius: 10,
-   fontSize: 15,
-   text: "Outlined Button",
-   tap: (){},
-   fontColor: Colors.white,
-   buttonColor: black,
-   hasShadow: true),
+MyFancyField(
+hintStyle: const TextStyle(fontWeight: FontWeight.w300,color: Colors.black,fontSize: 18),
+textStyle:  const TextStyle(fontWeight: FontWeight.w600,color: Colors.black,fontSize: 20),
+hasBorder:true,
+fieldColor:white,
+hint: 'With Font Styling',
+hasShadow: false),
+```
+
+### With Max Lines
+
+```dart
+MyFancyField(
+maxLines: 6,
+hasBorder:true,
+fieldColor:white,
+hint: 'With Max Lines',
+hasShadow: false),
 ```
